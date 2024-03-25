@@ -23,7 +23,7 @@ public class C01FastFeatureFile {
 
     }
 
-    @When("user searches for {string}")
+    @When("user searches for {string}3")
     public void user_searches_for(String string) {
         driver.findElement(By.name("q")).sendKeys( string+ Keys.ENTER);
     }

@@ -14,7 +14,7 @@ import java.time.Duration;
 public class HwC02CucumberSearch {
     WebDriver driver;
 
-    @Given("user goes to goole page")
+    @Given("user goes to goole page555")
     public void user_goes_to_goole_page() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -23,7 +23,7 @@ public class HwC02CucumberSearch {
 
     }
 
-    @When("user searches for {string}")
+    @When("user searches for {string}4")
     public void user_searches_for_cucumber(String string) {
         driver.findElement(By.name("q")).sendKeys( string+ Keys.ENTER);
 
@@ -34,7 +34,7 @@ public class HwC02CucumberSearch {
         System.out.println("titleOfCucumber = " + titleOfSamsung);
         Assert.assertTrue(driver.getTitle().equals(titleOfSamsung));
     }
-    @Then("closes the page")
+    @Then("closes the page1")
     public void closes_the_page() {
         driver.close();
         driver.quit();
