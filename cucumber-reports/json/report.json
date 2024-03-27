@@ -1,0 +1,139 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-03-27T06:53:13.948Z",
+        "line": 4,
+        "name": "TC01_samsungSearch",
+        "description": "",
+        "id": "first-task;tc01-samsungsearch",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3872626000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to goole page",
+            "match": {
+              "location": "stepdefinitions.C01FastFeatureFile.user_goes_to_goole_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user searches for \"samsung\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "tests that the page titile contains the word \"samsung\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"samsung\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.C01FastFeatureFile.tests_that_the_page_titile_contains_the_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "closes the page",
+            "match": {
+              "location": "stepdefinitions.C01FastFeatureFile.closes_the_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@samsung"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-27T06:53:17.851Z",
+        "line": 11,
+        "name": "TC02_cucumberSearch",
+        "description": "",
+        "id": "first-task;tc02-cucumbersearch",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user goes to google page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user searches for \"cucumber\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "tests that the page title contains the word cucumber",
+            "match": {
+              "location": "stepdefinitions.HwC02CucumberSearch.tests_that_the_page_title_contains_the_word_cucumber()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "closes the page",
+            "match": {
+              "location": "stepdefinitions.C01FastFeatureFile.closes_the_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cucumber"
+          }
+        ]
+      }
+    ],
+    "name": "first task",
+    "description": "",
+    "id": "first-task",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/hws.feature",
+    "tags": []
+  }
+]
