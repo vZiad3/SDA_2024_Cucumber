@@ -58,6 +58,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -85,6 +91,22 @@
                         <include>sda/tests/C04_UsePageObjects.java</include>
                         <include>sda/tests/C06_FacebookNegativeLoginTest_HW.java</include>
                     </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>4</threadCount>
+                    <includes>
+<!--                        one * will check and  for the word only    *Runner-->
+                        <include>**/runners/*Runner*.java</include>
+<!--                        double ** will check and look for the word and after     *Runner*   -->
+                    </includes>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>
             </plugin>
         </plugins>

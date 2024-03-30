@@ -6,7 +6,7 @@ Feature: first task
   Scenario: TC01_samsungSearch
     Given user goes to goole page
     When user searches for "samsung"
-    Then tests that the page titile contains the word "samsung"
+    Then tests that the page title contains the word "samsung"
     And closes the page
                                                     ##it will be dynamic  " samsung "
     @cucumber
