@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue = "stepdefinitions",                   // the directory, we want to use
-        features = "src/test/resources/features",        // the path of the feature we want to run
+        features = "src/test/resources/features/testProblem.feature",        // the path of the feature we want to run
         plugin = {                          // for the report
                 "html:cucumber-reports/html/report.html",
                 "json:cucumber-reports/json/report.json"
@@ -19,8 +19,5 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 public class Runner {
-
-
-
 
 }

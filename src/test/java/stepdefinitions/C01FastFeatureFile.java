@@ -32,6 +32,7 @@ public class C01FastFeatureFile {
         String titleOfSamsung = driver.getTitle();
         System.out.println("titleOfSamsung = " + titleOfSamsung);
         Assert.assertTrue(driver.getTitle().equals(titleOfSamsung));
+        Assert.fail();
 
     }
     @Then("closes the page")
